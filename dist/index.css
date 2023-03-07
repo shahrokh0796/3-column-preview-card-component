@@ -1,0 +1,198 @@
+/*!***************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/style.scss ***!
+  \***************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap);
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************/
+:root {
+  --color-orange: hsl(31, 77%, 52%);
+  --color-cyan: hsl(184, 100%, 22%);
+  --color-cyan-dark: hsl(179, 100%, 13%);
+  --color-very-light-grey: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+body .container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+body .product-container {
+  max-width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+body .product-container .product {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 200px;
+  flex: 1 1 200px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: hsl(0, 0%, 95%);
+  color: var(--color-very-light-grey);
+  font-size: 0.938rem;
+}
+body .product-container .product div {
+  max-width: 3.438rem;
+  max-height: 3.438rem;
+}
+body .product-container .product div img {
+  max-width: 100%;
+  max-height: auto;
+}
+body .product-container .product h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "Big Shoulders Display", cursive;
+}
+body .product-container .product p {
+  line-height: 1.5;
+  font-size: 0.938rem;
+}
+body .product-container .product button {
+  margin-top: 4rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  padding-top: 0.813rem;
+  padding-bottom: 0.813rem;
+  border-radius: 3.125rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 95%);
+  background-color: var(--color-very-light-grey);
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+}
+body .product-container .product:nth-of-type(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+}
+body .product-container .product:nth-of-type(1) button {
+  color: hsl(31, 77%, 52%);
+  color: var(--color-orange);
+}
+body .product-container .product:nth-of-type(1) button:hover {
+  background-color: hsl(31, 77%, 52%);
+  background-color: var(--color-orange);
+  color: hsl(0, 0%, 95%);
+  color: var(--color-very-light-grey);
+  outline: 2px solid hsl(0, 0%, 95%);
+  outline: 2px solid var(--color-very-light-grey);
+}
+body .product-container .product:nth-of-type(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+body .product-container .product:nth-of-type(2) button {
+  color: hsl(184, 100%, 22%);
+  color: var(--color-cyan);
+}
+body .product-container .product:nth-of-type(2) button:hover {
+  background-color: hsl(184, 100%, 22%);
+  background-color: var(--color-cyan);
+  color: hsl(0, 0%, 95%);
+  color: var(--color-very-light-grey);
+  outline: 2px solid hsl(0, 0%, 95%);
+  outline: 2px solid var(--color-very-light-grey);
+}
+body .product-container .product:nth-of-type(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+body .product-container .product:nth-of-type(3) button {
+  color: hsl(179, 100%, 13%);
+  color: var(--color-cyan-dark);
+}
+body .product-container .product:nth-of-type(3) button:hover {
+  background-color: hsl(179, 100%, 13%);
+  background-color: var(--color-cyan-dark);
+  color: hsl(0, 0%, 95%);
+  color: var(--color-very-light-grey);
+  outline: 2px solid hsl(0, 0%, 95%);
+  outline: 2px solid var(--color-very-light-grey);
+}
+body .attribution {
+  background-color: rgb(14, 14, 14);
+  height: 5rem;
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: hsl(0, 0%, 95%);
+  color: var(--color-very-light-grey);
+}
+body .attribution a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: hsl(0, 0%, 95%);
+  color: var(--color-very-light-grey);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (max-width: 940px) {
+  div.product-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  div.product-container .product button {
+    margin-top: 2rem;
+  }
+  div.product-container .product:nth-of-type(1) {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+  }
+  div.product-container .product:nth-of-type(2) {
+    border-top-right-radius: 0.625rem;
+  }
+  div.product-container .product:nth-of-type(3) {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+  }
+}
+@media (max-width: 632px) {
+  div.product-container .product:nth-of-type(1) {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+  }
+  div.product-container .product:nth-of-type(2) {
+    border-top-right-radius: 0rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map*/

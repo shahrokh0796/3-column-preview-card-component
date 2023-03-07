@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --color-orange: hsl(31, 77%, 52%);
+    --color-cyan: hsl(184, 100%, 22%); 
+    --color-cyan-dark: hsl(179, 100%, 13%);
+    --color-very-light-grey: hsl(0, 0%, 95%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+
+    .container {
+        min-block-size: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-container {
+        max-inline-size: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .product {
+            flex: 1 1 200px; 
+            padding-inline: 2.5rem;
+            padding-block: 2.5rem;
+            color: var(--color-very-light-grey);
+            font-size: 0.938rem;
+
+            div {
+                max-inline-size: 3.438rem;
+                max-block-size: 3.438rem;
+                img {
+                    max-inline-size: 100%;
+                    max-block-size: auto;
+                }
+            }
+
+            h2 {
+                margin-block: 1.5rem;
+                font-family: 'Big Shoulders Display', cursive;
+            }
+
+            p {
+                line-height: 1.5;
+                font-size: 0.938rem;
+            }
+
+            button {
+                margin-block-start: 4rem;
+                padding-inline: 1.875rem;
+                padding-block: 0.813rem;
+                border-radius: 3.125rem;
+                border: none;
+                cursor: pointer;
+                font-weight: 700;
+                background-color: var(--color-very-light-grey);
+                transition: background-color 200ms ease;
+            }
+        }
+
+        .product:nth-of-type(1) {
+            background-color: hsl(31, 77%, 52%);
+            border-start-start-radius: 0.625rem;
+            border-end-start-radius: 0.625rem;
+
+            button {
+                color: var(--color-orange);
+            }
+
+            button:hover {
+                background-color: var(--color-orange);
+                color: var(--color-very-light-grey);
+                outline: 2px solid var(--color-very-light-grey);
+            }
+        }
+
+        .product:nth-of-type(2) {
+            background-color:hsl(184, 100%, 22%);
+
+            button {
+                color: var(--color-cyan);
+            }
+
+            button:hover {
+                background-color: var(--color-cyan);
+                color: var(--color-very-light-grey);
+                outline: 2px solid var(--color-very-light-grey);
+            }
+        }
+
+        .product:nth-of-type(3) {
+            background-color: hsl(179, 100%, 13%);
+            border-start-end-radius: 0.625rem;
+            border-end-end-radius: 0.625rem;
+
+            button {
+                color: var(--color-cyan-dark);
+            }
+
+            button:hover {
+                background-color: var(--color-cyan-dark);
+                color: var(--color-very-light-grey);
+                outline: 2px solid var(--color-very-light-grey);
+            }
+        }
+    }
+
+    .attribution {
+        background-color: rgb(14, 14, 14);
+        height: 5rem;
+        min-inline-size: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-very-light-grey);
+        
+
+        a {
+            margin-inline: 1rem;
+            color: var(--color-very-light-grey);
+            text-decoration:none;
+        }
+    }
+}
+
+
+@media (max-width: 940px) {
+    div.product-container {
+        margin-block: 5rem;
+
+        .product {
+            button {
+                margin-block-start: 2rem;
+            }
+        }
+
+        .product:nth-of-type(1) {
+            border-start-start-radius: 0.625rem;
+            border-start-end-radius: 0rem;
+            border-end-start-radius: 0rem;
+        }
+    
+        .product:nth-of-type(2) {
+            border-start-end-radius: 0.625rem;
+        }
+    
+        .product:nth-of-type(3) {
+            border-start-end-radius: 0rem;
+            border-end-end-radius: 0.625rem;
+            border-end-start-radius: 0.625rem;
+        }
+    }
+}
+
+
+@media (max-width: 632px) {
+    div.product-container {
+
+        .product:nth-of-type(1) {
+            border-start-start-radius: 0.625rem;
+            border-start-end-radius: 0.625rem;
+        }
+    
+        .product:nth-of-type(2) {
+            border-start-end-radius: 0rem;
+        }
+    }
+}

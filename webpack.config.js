@@ -1,0 +1,51 @@
+const path = require("path");
+const HTMLWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+
+module.exports = {
+    mode: "development",
+    entry: {
+        index: "./src/index.js",
+    },
+    devtool: "source-map",
+    output: {
+        filename: "[name].[contenthash].js",
+        path: path.resolve(__dirname, "dist"),
+        assetModuleFilename: "images/[hash][ext][query]",
+        clean: true,
+    },
+    plugins: [
+        new HTMLWebpackPlugin({
+            template: "./src/template.html",
+            inject: true,
+            scriptLoading: "defer",
+            hash: true,
+        }),
+        new MiniCssExtractPlugin(),
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.(s[ac]|c)ss$/i,
+                use: [
+                    MiniCssExtractPlugin.loader, 
+                    "css-loader", 
+                    "sass-loader",
+                    "postcss-loader",
+                ],
+            },
+            {
+                test: /\.html$/,
+                use: "html-loader",
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+        ],
+    },
+    optimization: {
+        usedExports: true,
+    },
+}
